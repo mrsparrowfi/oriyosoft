@@ -50,17 +50,17 @@ function Home() {
         <div className="header-ribbon">
           <div className="phone">
             <i className="bi bi-telephone-outbound" />
-            <span> +358 72 727 7272 </span>
+            <span> +358 41 741 2915 </span>
           </div>
 
           <div className="email">
             <i className="bi bi-envelope" />
-            <span> info@radiusit.com </span>
+            <span> info@oriyosoft.com </span>
           </div>
         </div>
 
         <div id="menu--holder" className="menu--holder">
-          <div className="logo">Radius IT</div>
+          <div className="logo">Oriyosoft</div>
           <nav id="main-nav">
             <a href="#home" className="active">
               {' '}
