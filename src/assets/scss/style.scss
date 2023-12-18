@@ -1,22 +1,75 @@
-@charset "UTF-8";
 
-// 1. Configuration and helpers
-@use './abstracts';
 
-// 2. Vendors
-@use './vendors';
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
 
-// 3. Base stuff
-@use './globals';
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
-// 4. Layout-related sections
-@use './layouts';
+* {
+    margin: 0;
+    padding: 0;
+}
 
-// 5. Components
-@use './components';
+body {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: 'Poppins', sans-serif;
+}
 
-// 6. Page-specific styles
-@use './pages';
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
 
-// 7. Themes
-@use './themes';
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    background: none;
+    outline: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: .25rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: blue;
+    border: 1px solid orange;
+    outline: 1px solid slategrey;
+}
