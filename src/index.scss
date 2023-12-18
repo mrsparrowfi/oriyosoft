@@ -1,0 +1,74 @@
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    background: none;
+    outline: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: .25rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: blue;
+    border: 1px solid orange;
+    outline: 1px solid slategrey;
+}

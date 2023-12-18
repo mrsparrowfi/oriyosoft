@@ -1,0 +1,264 @@
+
+.contact {
+    padding-bottom: 32.5rem;
+    background-image: url('../images/contact.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+    min-height: 100vh;
+
+    .header--title {
+        margin: 0 12.5%;
+        margin-top: -5rem;
+        text-align: center;
+        border-radius: 2.5rem;
+        background: radial-gradient(circle, rgb(227, 235, 233) 25%, rgba(123, 163, 144, 0.75) 45%);
+
+        h2 {
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: rgba(73, 37, 4, 1);
+        }
+    }
+
+    .contact--body {
+        display: flex;
+        margin-top: 5rem;
+        padding: 0 12.5%;
+        justify-content: space-between;
+
+        .left--panel {
+            width: 65%;
+            height: 75vh;
+            padding: 2rem 3.5rem;
+            border-radius: 2.5rem;
+            background: radial-gradient(circle, rgba(229, 235, 227, 0.35) 40%, rgba(123, 163, 144, 0.75) 75%);
+
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 500;
+                margin-bottom: .5rem;
+            }
+
+            .contact--form {
+                padding: 1.5rem 3rem;
+                width: 100%;
+
+                .row {
+                    display: flex;
+                    gap: 0 2.5rem;
+
+                    .column {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+
+                        span {
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                            color: rgb(29, 4, 99);
+                        }
+
+                        input {
+                            margin: .5rem 1rem;
+                            padding: .5rem;
+                            outline: none;
+                            border: none;
+                            border-radius: .5rem;
+                            background: rgba(248, 248, 248, 0.25);
+
+                            &[type=text] {
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                color: black;
+                            }
+
+                            &[type=email] {
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                color: black;
+                            }
+
+                            &::placeholder {
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                color: black;
+                            }
+
+                            &:focus {
+                                border-radius: .5rem;
+                                border: 1px solid black;
+                                background: rgba(228, 235, 235, 0.5);
+                            }
+                        }
+                    }
+                }
+
+                .msg-text {
+                    margin: .5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        color: rgb(29, 4, 99);
+                    }
+
+                    textarea {
+                        width: 80%;
+                        height: 25vh;
+                        margin: .5rem 1rem;
+                        border-radius: .5rem;
+                        padding: .5rem;
+                        outline: none;
+                        border: none;
+                        background: rgba(248, 248, 248, 0.25);
+
+                        &[type=text] {
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            color: black;
+                        }
+
+                        &::placeholder {
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            color: black;
+                        }
+
+                        &:focus {
+                            border-radius: .5rem;
+                            border: 1px solid black;
+                            background: rgba(228, 235, 235, 0.5);
+                        }
+                    }
+                }
+
+                .form--btn {
+                    margin: 2rem 1.5rem;
+                    display: flex;
+                    gap: 0 1rem;
+
+                    button {
+                        padding: .5rem 2rem;
+                        border-radius: 0.5rem;
+                        background: #fff;
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+
+                    .space {
+                        flex: 1;
+                    }
+                }
+            }
+
+            &:hover {
+                background: radial-gradient(circle, rgba(229, 235, 227, 0.5) 35%, rgba(123, 163, 144, .5) 75%);
+            }
+
+        }
+
+        .right--panel {
+            width: 32.5%;
+            height: 100%;
+
+            .contact--info {
+                height: 25vh;
+                padding: 1.5rem 2.5rem;
+                border-radius: 2.5rem;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                background: linear-gradient(135deg, rgba(35, 196, 236, 0.9) 45%, rgba(123, 163, 144, 0.6) 60%);
+
+                h2 {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    margin-bottom: .5rem;
+                }
+
+                .address {
+                    padding: .5rem 1.5rem;
+                    border-top: 1px solid orange;
+
+                    i {
+                        font-size: 1.2rem;
+                        color: black;
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                }
+
+                .email {
+                    padding: .5rem 1.5rem;
+
+                    i {
+                        font-size: 1.2rem;
+                        color: black;
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                }
+
+                .phone {
+                    padding: .5rem 1.5rem;
+
+                    i {
+                        font-size: 1.2rem;
+                        color: black;
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                    }
+                }
+
+                .social-icons {
+                    padding: 1rem 1.5rem;
+                    display: flex;
+                    gap: 0 .5rem;
+
+                    li {
+                        border-radius: .5rem;
+                        background: rgba(53, 5, 53, 0.8);
+
+                        i {
+                            padding: 1rem .5rem;
+                            font-size: 2.4rem;
+                            color:rgb(250, 250, 250);
+                        }
+                    }
+                }
+            }
+
+            .contact--map {
+                margin-top: 2.5rem;
+                height: 47.5vh;
+
+                iframe {
+                    border-radius: .5rem;
+                    opacity: .8;
+                }
+
+                &:hover iframe {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,309 @@
+
+.home {
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(160deg, rgba(175, 156, 156, 0.85) 0%, rgba(246,140,255,1) 50%, rgba(255,222,50,1) 80%);
+
+    header {
+
+        &__main, &__sidebar {
+            background-color: purple;  // Compound css rule is SASS
+        }
+
+        .header {
+
+            &-ribbon {
+                width: 85%;
+                margin: 0 auto;
+                padding: .5rem 0;
+                display: flex;
+                justify-content: space-between;
+
+                i {
+                    margin-top: .5rem;
+                    margin-right: .3rem;
+                    font-size: .6rem;
+                    font-weight: 400;
+                    color: rgb(34, 3, 3);
+                }
+
+                span {
+                    font-size: .6rem;
+                    font-weight: 400;
+                    color: rgb(34, 3, 3);
+                }
+            }
+
+        }
+
+        .menu--holder {
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            z-index: 9999999;
+            position: relative;
+            padding: .5rem 7.5%;
+            box-sizing: border-box;
+            justify-content: space-between;
+            background: radial-gradient(circle, rgb(180, 183, 201, 0.6) 50%, rgb(53, 247, 182, 0.7) 75%);
+            backdrop-filter: blur(15px);
+
+            .logo {
+                font-size: 2rem;
+                font-weight: 600;
+                color: rgb(50, 78, 4);
+            }
+
+            #main-nav {
+                display: flex;
+                gap: 0 1rem;
+
+                a {
+                    padding: .5rem 2rem;
+                    border-radius: .5rem;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+
+                    &.active {
+                        color: rgb(0, 0, 0);
+                        background: linear-gradient(30deg, rgba(21, 77, 16, 0.25) 35%, rgba(29, 190, 24, 0.637) 75%);
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                        background: rgba(236, 236, 231, 0.87);
+                    }
+                }
+            }
+
+        }
+
+        #menu--holder {
+            &.sticky {
+                position: fixed;
+                top: 0;
+            }
+
+            .navbarOffsetMargin {
+                padding-top: 4.5rem;
+            }
+        }
+
+    }
+
+    .header--body {
+        position: relative;
+
+        .banner {
+            width: 75%;
+            height: 85vh;
+            position: relative;
+            margin: 1.5rem auto;
+            text-align: center;
+
+            border-width: 1.2rem;
+            border-style: solid;
+            border-color: rgba(149, 157, 165, 1);
+            border-radius: 3.5rem;
+
+            .black--border {
+                width: 100%;
+                height: 100%;
+                padding: 0 6.5rem;
+                border-radius: 2rem;
+                background-color: rgb(223, 235, 231, 0.75);
+                border: 3px solid rgba(110, 97, 84, 0.85);
+
+                .circle {
+                    width: 2rem;
+                    height: 2rem;
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 1.5rem;
+                    left: 50%;
+                    background-color: rgb(43, 8, 8);
+                }
+
+                .img-holder {
+                    width: 100%;
+                    height: 85%;
+                    margin: 4.5rem 0;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        animation: animate 30s infinite ease-in-out alternate;
+
+                        &:nth-of-type(1) {
+                            animation-delay: 20s;
+                        }
+
+                        &:nth-of-type(2) {
+                            animation-delay: 10s;
+                        }
+
+                        &:nth-of-type(3) {
+                            animation-delay: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .header--left {
+            width: 30rem;
+            height: 45rem;
+            position: absolute;
+            left: 5rem;
+            top: 10rem;
+            padding: 2.5rem 1.5rem;
+            border-radius: 2.5rem;
+            background: rgba(221, 211, 62, 0.85);
+            box-shadow: 0px 0px 60px 5px rgb(45, 119, 119);
+
+            .left--content {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                position: relative;
+
+                & > div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    animation: animate 30s infinite ease-in-out alternate;
+
+                    h2 {
+                        font-size: 2rem;
+                        font-weight: 500;
+                        color: rgba(5, 32, 2, 0.85);
+                    }
+
+                    p {
+                        padding: 1rem 2rem;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        color: rgba(5, 32, 2, 0.85);
+                        text-align: justify;
+                        line-height: 1.25;
+                    }
+
+                }
+
+                div {
+
+                    &:nth-of-type(1) {
+                        animation-delay: 20s;
+                    }
+
+                    &:nth-of-type(2) {
+                        animation-delay: 10s;
+                    }
+
+                    &:nth-of-type(3) {
+                        animation-delay: 0;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .header--right {
+            width: 35rem;
+            height: 50rem;
+            position: absolute;
+            right: 5rem;
+            top: 10rem;
+            z-index: 999;
+            text-align: center;
+            border-radius: 2.5rem;
+            padding: 2.5rem 1.5rem;
+            background: rgba(9, 155, 240, 0.85);
+            box-shadow: 0px 0px 60px 5px rgb(45, 119, 119);
+
+            .right--content {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                position: relative;
+
+                & > div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    animation: animate 30s infinite ease-in-out alternate;
+
+                    h2 {
+                        font-size: 2rem;
+                        font-weight: 500;
+                        color: rgba(5, 32, 2, 0.85);
+                    }
+
+                    p {
+                        padding: 1rem 2.5rem;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        color: rgba(5, 32, 2, 0.85);
+                        text-align: justify;
+                        line-height: 1.35;
+                    }
+                }
+
+                div {
+
+                    &:nth-of-type(1) {
+                        animation-delay: 20s;
+                    }
+
+                    &:nth-of-type(2) {
+                        animation-delay: 10s;
+                    }
+
+                    &:nth-of-type(3) {
+                        animation-delay: 0;
+                    }
+
+                }
+
+            }
+
+        }
+
+        @keyframes animate {
+
+            0% {
+                opacity: 0;
+            }
+
+            35% {
+                opacity: 1;
+            }
+
+            70% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+
+    }
+
+    .svg-img {
+        width: 100%;
+        height: 32rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+}
